@@ -1,0 +1,87 @@
+.flex-grid {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-grid .col {
+	flex: auto;
+}
+
+.flex-grid .col-1 {
+	flex: 0 1 8.3333333333%;
+	max-width: 8.3333333333%;
+}
+
+.flex-grid .col-2 {
+	flex: 0 1 16.6666666667%;
+	max-width: 16.6666666667%;
+}
+
+.flex-grid .col-3 {
+	flex: 0 1 25%;
+	max-width: 25%;
+}
+
+.flex-grid .col-4 {
+	flex: 0 1 33.3333333333%;
+	max-width: 33.3333333333%;
+}
+
+.flex-grid .col-5 {
+	flex: 0 1 41.6666666667%;
+	max-width: 41.6666666667%;
+}
+
+.flex-grid .col-6 {
+	flex: 0 1 50%;
+	max-width: 50%;
+}
+
+.flex-grid .col-7 {
+	flex: 0 1 58.3333333333%;
+	max-width: 58.3333333333%;
+}
+
+.flex-grid .col-8 {
+	flex: 0 1 66.6666666667%;
+	max-width: 66.6666666667%;
+}
+
+.flex-grid .col-9 {
+	flex: 0 1 75%;
+	max-width: 75%;
+}
+
+.flex-grid .col-10 {
+	flex: 0 1 83.3333333333%;
+	max-width: 83.3333333333%;
+}
+
+.flex-grid .col-11 {
+	flex: 0 1 91.6666666667%;
+	max-width: 91.6666666667%;
+}
+
+.flex-grid .col-12 {
+	flex: 0 1 100%;
+	max-width: 100%;
+}
+
+.flex-spacing :not(:first-child) {
+	margin: 0 0 0 0.5rem;
+}
+
+@media(max-width: 768px) {
+	.flex-grid {
+		flex-direction: column;
+	}
+
+	.flex-grid .col,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12 {
+		flex: 1 1 100% !important;
+		max-width: 100% !important;
+	}
+
+	.flex-spacing :not(:first-child) {
+		margin: 0.5rem 0 0 0;
+	}
+}

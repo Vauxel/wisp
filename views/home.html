@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--<link rel="icon" href="/img/favicon.ico">-->
+	<title>Wisp</title>
+
+	<!-- Core CSS -->
+	<link rel="stylesheet" type="text/css" href="/css/flex-grid.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+</head>
+<header>
+	<nav id="navigation-bar">
+		<div class="navigation-element navigation-panel">
+			<a id="sidebar-toggle" class="navigation-button"><i class="fa fa-fw fa-bars" aria-hidden="true"></i></a>
+		</div>
+		<div class="navigation-element navigation-brand">Wisp</div>
+		<div class="navigation-element navigation-options">
+			<a class="navigation-button"><i class="fa fa-fw fa-cog" aria-hidden="true"></i></a>
+		</div>
+	</nav>
+</header>
+<body>
+	<!-- Sidebar -->
+	<aside id="sidebar-wrapper">
+		<div class="sidebar-title">Wisp</div>
+		<div class="sidebar-stats">
+			<div class="sidebar-stat">
+				<div class="sidebar-stat-name"><i class="fa fa-fw fa-file-o" aria-hidden="true"></i> Free</div>
+				<div class="sidebar-stat-value">99.99 MB</div>
+			</div>
+			<div class="sidebar-stat">
+				<div class="sidebar-stat-name"><i class="fa fa-fw fa-file" aria-hidden="true"></i> Used</div>
+				<div class="sidebar-stat-value">99.99 MB</div>
+			</div>
+			<div class="sidebar-stat">
+				<div class="sidebar-stat-name"><i class="fa fa-fw fa-pie-chart" aria-hidden="true"></i> Capacity</div>
+				<div class="sidebar-stat-value">50.0%</div>
+			</div>
+			<div class="sidebar-stat">
+				<div class="progress-wrap">
+					<div class="progress-bar" style="width: 50.0%;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar-list">
+			<input type="text" class="sidebar-list-search" name="search" placeholder="Search..">
+			<div class="sidebar-list-scroll">
+				<a class="sidebar-list-item" href="#"><i class="fa fa-fw fa-sitemap" aria-hidden="true"></i> Directory One</a>
+				<a class="sidebar-list-item" href="#"><i class="fa fa-fw fa-sitemap" aria-hidden="true"></i> Directory Two</a>
+				<a class="sidebar-list-item" href="#"><i class="fa fa-fw fa-sitemap" aria-hidden="true"></i> Directory Three</a>
+			</div>
+		</div>
+	</aside>
+
+	<!-- Navigation Bar -->
+	<main id="wrapper">
+		<!-- Header -->
+		<section id="infoheader-wrapper">
+			<span class="infoheader-breadcrumbs">
+				<ul>
+				 <li>Directory One</li>
+				</ul>
+			</span>
+			<span class="infoheader-buttons">
+				<a class="infoheader-button" href="#"><i class="fa fa-fw fa-plus-circle" aria-hidden="true"></i> Upload File</a>
+				<a class="infoheader-button" href="#"><i class="fa fa-fw fa-folder" aria-hidden="true"></i> New Directory</a>
+				<a class="infoheader-button" href="#"><i class="fa fa-lg fa-cogs" aria-hidden="true"></i></a>
+			</span>
+		</section>
+
+		<!-- Page Content -->
+		<section id="file-list-wrapper">
+			<div class="file-list-row file-list-header">
+				<div class="file-list-col file-list-col-name">Name</div>
+				<div class="file-list-col file-list-col-size">Size</div>
+				<div class="file-list-col file-list-col-date">Modification Date</div>
+				<div class="file-list-col file-list-col-opt"></div>
+			</div>
+			<div class="file-list-row">
+				<div class="file-list-col file-list-col-icon file-icon-text">
+					<i class="fa fa-lg fa-file-text-o fa-inverse"></i>
+				</div>
+				<div class="file-list-col file-list-col-name">Example Text Document.txt</div>
+				<div class="file-list-col file-list-col-size">99.99 KB</div>
+				<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
+				<div class="file-list-col file-list-col-opt">&bull;&bull;&bull;</div>
+			</div>
+			<div class="file-list-row">
+				<div class="file-list-col file-list-col-icon file-icon-image">
+					<i class="fa fa-lg fa-file-image-o fa-inverse"></i>
+				</div>
+				<div class="file-list-col file-list-col-name">Example Image.png</div>
+				<div class="file-list-col file-list-col-size">99.99 KB</div>
+				<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
+				<div class="file-list-col file-list-col-opt">&bull;&bull;&bull;</div>
+			</div>
+			<div class="file-list-row">
+				<div class="file-list-col file-list-col-icon file-icon-audio">
+					<i class="fa fa-lg fa-file-audio-o fa-inverse"></i>
+				</div>
+				<div class="file-list-col file-list-col-name">Example Audio.mp3</div>
+				<div class="file-list-col file-list-col-size">99.99 KB</div>
+				<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
+				<div class="file-list-col file-list-col-opt">&bull;&bull;&bull;</div>
+			</div>
+			<div class="file-list-row">
+				<div class="file-list-col file-list-col-icon file-icon-video">
+					<i class="fa fa-lg fa-file-video-o fa-inverse"></i>
+				</div>
+				<div class="file-list-col file-list-col-name">Example Video.mp4</div>
+				<div class="file-list-col file-list-col-size">99.99 KB</div>
+				<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
+				<div class="file-list-col file-list-col-opt">&bull;&bull;&bull;</div>
+			</div>
+			<div class="file-list-row">
+				<div class="file-list-col file-list-col-icon file-icon-archive">
+					<i class="fa fa-lg fa-file-archive-o fa-inverse"></i>
+				</div>
+				<div class="file-list-col file-list-col-name">Example Archive.zip</div>
+				<div class="file-list-col file-list-col-size">99.99 KB</div>
+				<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
+				<div class="file-list-col file-list-col-opt">&bull;&bull;&bull;</div>
+			</div>
+			<div class="file-list-row">
+				<div class="file-list-col file-list-col-icon file-icon-code">
+					<i class="fa fa-lg fa-file-code-o fa-inverse"></i>
+				</div>
+				<div class="file-list-col file-list-col-name">Example Script.sh</div>
+				<div class="file-list-col file-list-col-size">99.99 KB</div>
+				<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
+				<div class="file-list-col file-list-col-opt">&bull;&bull;&bull;</div>
+			</div>
+			<div class="file-list-row">
+				<div class="file-list-col file-list-col-icon file-icon-unknown">
+					<i class="fa fa-lg fa-file-o fa-inverse"></i>
+				</div>
+				<div class="file-list-col file-list-col-name">Example File.dat</div>
+				<div class="file-list-col file-list-col-size">99.99 KB</div>
+				<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
+				<div class="file-list-col file-list-col-opt">&bull;&bull;&bull;</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Core JS -->
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+
+	<!-- Sidebar Toggle Script -->
+	<script>
+		$("#sidebar-toggle").click(function(e) {
+			e.preventDefault();
+			$("#sidebar-wrapper").toggleClass("toggled");
+			$("#wrapper").toggleClass("toggled");
+		});
+	</script>
+</body>
+</html>

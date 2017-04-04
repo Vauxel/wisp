@@ -1,0 +1,12 @@
+{
+	"host": "127.0.0.1",
+	"port": 8080,
+	"sensitiverouting": false,
+	"staticfolder": "assets",
+	"viewsfolder": "views",
+	"templating": {
+		"autoescape": true,
+		"autoreload": true
+	},
+	"poweredby_header": true
+}
