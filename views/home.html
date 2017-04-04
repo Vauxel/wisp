@@ -75,80 +75,92 @@
 
 		<!-- Page Content -->
 		<section id="file-list-wrapper">
-			<div class="file-list-row file-list-header">
-				<div class="file-list-col file-list-col-name">Name</div>
-				<div class="file-list-col file-list-col-size">Size</div>
-				<div class="file-list-col file-list-col-date">Modification Date</div>
+			<div class="file-list-header">
+				<div class="file-list-col file-list-col-name" data-sort="0">
+					Name
+					<i class="fa fa-fw fa-sort-amount-asc file-list-sort" aria-hidden="true"></i>
+				</div>
+				<div class="file-list-col file-list-col-size" data-sort="0">
+					Size
+					<i class="fa fa-fw fa-sort-amount-asc file-list-sort" aria-hidden="true"></i>
+				</div>
+				<div class="file-list-col file-list-col-date" data-sort="0">
+					Modification Date
+					<i class="fa fa-fw fa-sort-amount-asc file-list-sort" aria-hidden="true"></i>
+				</div>
 				<div class="file-list-col file-list-col-opt"></div>
 			</div>
-			<div class="file-list-row">
-				<div class="file-list-col file-list-col-icon file-icon-text">
-					<i class="fa fa-lg fa-file-text-o fa-inverse"></i>
+			<div class="file-list-body">
+				<div class="file-list-row">
+					<div class="file-list-col file-list-col-icon file-icon-text">
+						<i class="fa fa-lg fa-file-text-o fa-inverse"></i>
+					</div>
+					<div class="file-list-col file-list-col-name">Example Text Document.txt</div>
+					<div class="file-list-col file-list-col-size">99.99 KB</div>
+					<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
+					<div class="file-list-col file-list-col-opt"><a href="#"><i class="fa fa-fw fa-lg fa-ellipsis-h" aria-hidden="true"></i></a></div>
 				</div>
-				<div class="file-list-col file-list-col-name">Example Text Document.txt</div>
-				<div class="file-list-col file-list-col-size">99.99 KB</div>
-				<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
-				<div class="file-list-col file-list-col-opt">&bull;&bull;&bull;</div>
-			</div>
-			<div class="file-list-row">
-				<div class="file-list-col file-list-col-icon file-icon-image">
-					<i class="fa fa-lg fa-file-image-o fa-inverse"></i>
+				<div class="file-list-row">
+					<div class="file-list-col file-list-col-icon file-icon-image">
+						<i class="fa fa-lg fa-file-image-o fa-inverse"></i>
+					</div>
+					<div class="file-list-col file-list-col-name">Example Image.png</div>
+					<div class="file-list-col file-list-col-size">99.99 KB</div>
+					<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
+					<div class="file-list-col file-list-col-opt"><a href="#"><i class="fa fa-fw fa-lg fa-ellipsis-h" aria-hidden="true"></i></a></div>
 				</div>
-				<div class="file-list-col file-list-col-name">Example Image.png</div>
-				<div class="file-list-col file-list-col-size">99.99 KB</div>
-				<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
-				<div class="file-list-col file-list-col-opt">&bull;&bull;&bull;</div>
-			</div>
-			<div class="file-list-row">
-				<div class="file-list-col file-list-col-icon file-icon-audio">
-					<i class="fa fa-lg fa-file-audio-o fa-inverse"></i>
+				<div class="file-list-row">
+					<div class="file-list-col file-list-col-icon file-icon-audio">
+						<i class="fa fa-lg fa-file-audio-o fa-inverse"></i>
+					</div>
+					<div class="file-list-col file-list-col-name">Example Audio.mp3</div>
+					<div class="file-list-col file-list-col-size">99.99 KB</div>
+					<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
+					<div class="file-list-col file-list-col-opt"><a href="#"><i class="fa fa-fw fa-lg fa-ellipsis-h" aria-hidden="true"></i></a></div>
 				</div>
-				<div class="file-list-col file-list-col-name">Example Audio.mp3</div>
-				<div class="file-list-col file-list-col-size">99.99 KB</div>
-				<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
-				<div class="file-list-col file-list-col-opt">&bull;&bull;&bull;</div>
-			</div>
-			<div class="file-list-row">
-				<div class="file-list-col file-list-col-icon file-icon-video">
-					<i class="fa fa-lg fa-file-video-o fa-inverse"></i>
+				<div class="file-list-row">
+					<div class="file-list-col file-list-col-icon file-icon-video">
+						<i class="fa fa-lg fa-file-video-o fa-inverse"></i>
+					</div>
+					<div class="file-list-col file-list-col-name">Example Video.mp4</div>
+					<div class="file-list-col file-list-col-size">99.99 KB</div>
+					<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
+					<div class="file-list-col file-list-col-opt"><a href="#"><i class="fa fa-fw fa-lg fa-ellipsis-h" aria-hidden="true"></i></a></div>
 				</div>
-				<div class="file-list-col file-list-col-name">Example Video.mp4</div>
-				<div class="file-list-col file-list-col-size">99.99 KB</div>
-				<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
-				<div class="file-list-col file-list-col-opt">&bull;&bull;&bull;</div>
-			</div>
-			<div class="file-list-row">
-				<div class="file-list-col file-list-col-icon file-icon-archive">
-					<i class="fa fa-lg fa-file-archive-o fa-inverse"></i>
+				<div class="file-list-row">
+					<div class="file-list-col file-list-col-icon file-icon-archive">
+						<i class="fa fa-lg fa-file-archive-o fa-inverse"></i>
+					</div>
+					<div class="file-list-col file-list-col-name">Example Archive.zip</div>
+					<div class="file-list-col file-list-col-size">99.99 KB</div>
+					<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
+					<div class="file-list-col file-list-col-opt"><a href="#"><i class="fa fa-fw fa-lg fa-ellipsis-h" aria-hidden="true"></i></a></div>
 				</div>
-				<div class="file-list-col file-list-col-name">Example Archive.zip</div>
-				<div class="file-list-col file-list-col-size">99.99 KB</div>
-				<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
-				<div class="file-list-col file-list-col-opt">&bull;&bull;&bull;</div>
-			</div>
-			<div class="file-list-row">
-				<div class="file-list-col file-list-col-icon file-icon-code">
-					<i class="fa fa-lg fa-file-code-o fa-inverse"></i>
+				<div class="file-list-row">
+					<div class="file-list-col file-list-col-icon file-icon-code">
+						<i class="fa fa-lg fa-file-code-o fa-inverse"></i>
+					</div>
+					<div class="file-list-col file-list-col-name">Example Script.sh</div>
+					<div class="file-list-col file-list-col-size">99.99 KB</div>
+					<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
+					<div class="file-list-col file-list-col-opt"><a href="#"><i class="fa fa-fw fa-lg fa-ellipsis-h" aria-hidden="true"></i></a></div>
 				</div>
-				<div class="file-list-col file-list-col-name">Example Script.sh</div>
-				<div class="file-list-col file-list-col-size">99.99 KB</div>
-				<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
-				<div class="file-list-col file-list-col-opt">&bull;&bull;&bull;</div>
-			</div>
-			<div class="file-list-row">
-				<div class="file-list-col file-list-col-icon file-icon-unknown">
-					<i class="fa fa-lg fa-file-o fa-inverse"></i>
+				<div class="file-list-row">
+					<div class="file-list-col file-list-col-icon file-icon-unknown">
+						<i class="fa fa-lg fa-file-o fa-inverse"></i>
+					</div>
+					<div class="file-list-col file-list-col-name">Example File.dat</div>
+					<div class="file-list-col file-list-col-size">99.99 KB</div>
+					<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
+					<div class="file-list-col file-list-col-opt"><a href="#"><i class="fa fa-fw fa-lg fa-ellipsis-h" aria-hidden="true"></i></a></div>
 				</div>
-				<div class="file-list-col file-list-col-name">Example File.dat</div>
-				<div class="file-list-col file-list-col-size">99.99 KB</div>
-				<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
-				<div class="file-list-col file-list-col-opt">&bull;&bull;&bull;</div>
 			</div>
 		</section>
 	</main>
 
 	<!-- Core JS -->
 	<script type="text/javascript" src="/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
 
 	<!-- Sidebar Toggle Script -->
 	<script>
@@ -156,6 +168,21 @@
 			e.preventDefault();
 			$("#sidebar-wrapper").toggleClass("toggled");
 			$("#wrapper").toggleClass("toggled");
+		});
+	</script>
+
+	<!-- File List Sorting Functionality -->
+	<script>
+		$("#file-list-wrapper > .file-list-header > .file-list-col-name[data-sort]").click(function() {
+			sortFileList("name");
+		});
+
+		$("#file-list-wrapper > .file-list-header > .file-list-col-size[data-sort]").click(function() {
+			sortFileList("size");
+		});
+
+		$("#file-list-wrapper > .file-list-header > .file-list-col-date[data-sort]").click(function() {
+			sortFileList("date");
 		});
 	</script>
 </body>
