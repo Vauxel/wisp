@@ -1,2 +1,2 @@
 # wisp
-Simplistic, personal file server
+A minimalistic, personal file server
