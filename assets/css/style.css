@@ -4,14 +4,15 @@ html, body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
-	overflow: hidden;
 }
 
 body {
 	color: #333;
 	font-family: 'Source Sans Pro', Arial, sans-serif;
 	font-size: 14px;
-	margin-top: 56px;
+	position: absolute;
+	top: 56px;
+	height: calc(100% - 56px);
 }
 
 a {
@@ -19,7 +20,7 @@ a {
 }
 
 #wrapper {
-	height: calc(100% - 56px);
+	height: 100%;
 	margin-left: 250px;
 	overflow: auto;
 	transition: 0.5s;
@@ -34,7 +35,7 @@ a {
 	position: absolute;
 	left: 0;
 	width: 250px;
-	height: calc(100% - 56px);
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	overflow-x: hidden;
@@ -241,6 +242,10 @@ a {
 	transition: all 0.5s;
 }
 
+.infoheader-buttons .infoheader-button.infoheader-button-mobile {
+	display: none;
+}
+
 .file-list-header {
 	display: flex;
 	flex-direction: row;
@@ -324,6 +329,28 @@ a {
 .file-list-col.file-list-col-opt a {
 	color: inherit;
 	text-decoration: none;
+}
+
+@media(max-width: 768px) {
+	.file-list-header {
+		display: none;
+	}
+
+	.file-list-col.file-list-col-size {
+		display: none;
+	}
+
+	.file-list-col.file-list-col-date {
+		display: none;
+	}
+
+	.infoheader-buttons .infoheader-button {
+		display: none;
+	}
+
+	.infoheader-buttons .infoheader-button.infoheader-button-mobile {
+		display: inline;
+	}
 }
 
 .file-icon-unknown {
