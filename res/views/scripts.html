@@ -1,0 +1,30 @@
+<!-- Sidebar Toggle Script -->
+<script>
+	$("#sidebar-toggle").click(function(e) {
+		e.preventDefault();
+		$("#sidebar-wrapper").toggleClass("toggled");
+		$("#wrapper").toggleClass("toggled");
+	});
+</script>
+
+<!-- File List Sorting Functionality -->
+<script>
+	$("#file-list-wrapper > .file-list-header > .file-list-col-name[data-sort]").click(function() {
+		sortFileList("name");
+	});
+
+	$("#file-list-wrapper > .file-list-header > .file-list-col-size[data-sort]").click(function() {
+		sortFileList("size");
+	});
+
+	$("#file-list-wrapper > .file-list-header > .file-list-col-date[data-sort]").click(function() {
+		sortFileList("date");
+	});
+</script>
+
+<!-- Directory Filtering Functionality -->
+<script>
+	$("#sidebar-wrapper .sidebar-list-search").keyup(function() {
+		filterDirectoryList($("#sidebar-wrapper .sidebar-list-search").val());
+	});
+</script>

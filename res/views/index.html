@@ -15,200 +15,26 @@
 </head>
 <body>
 	<!-- Navigation Bar Header -->
-	<header>
-		<nav id="navigation-bar">
-			<div class="navigation-element navigation-panel">
-				<a id="sidebar-toggle" class="navigation-button"><i class="fa fa-fw fa-bars" aria-hidden="true"></i></a>
-			</div>
-			<div class="navigation-element navigation-brand">Wisp</div>
-			<div class="navigation-element navigation-options">
-				<a class="navigation-button"><i class="fa fa-fw fa-cog" aria-hidden="true"></i></a>
-			</div>
-		</nav>
-	</header>
+	{% include "navbar.html" %}
 
 	<!-- Sidebar -->
-	<aside id="sidebar-wrapper">
-		<div class="sidebar-title">Wisp</div>
-		<div class="sidebar-stats">
-			<div class="sidebar-stat">
-				<div class="sidebar-stat-name"><i class="fa fa-fw fa-file-o" aria-hidden="true"></i> Free</div>
-				<div class="sidebar-stat-value">99.99 MB</div>
-			</div>
-			<div class="sidebar-stat">
-				<div class="sidebar-stat-name"><i class="fa fa-fw fa-file" aria-hidden="true"></i> Used</div>
-				<div class="sidebar-stat-value">99.99 MB</div>
-			</div>
-			<div class="sidebar-stat">
-				<div class="sidebar-stat-name"><i class="fa fa-fw fa-pie-chart" aria-hidden="true"></i> Capacity</div>
-				<div class="sidebar-stat-value">50.0%</div>
-			</div>
-			<div class="sidebar-stat">
-				<div class="progress-wrap">
-					<div class="progress-bar" style="width: 50.0%;"></div>
-				</div>
-			</div>
-		</div>
-		<div class="sidebar-list">
-			<input type="text" class="sidebar-list-search" name="directory-search" placeholder="Search..">
-			<div class="sidebar-list-scroll">
-				<a class="sidebar-list-item" href="#"><i class="fa fa-fw fa-sitemap" aria-hidden="true"></i> Directory One</a>
-				<a class="sidebar-list-item" href="#"><i class="fa fa-fw fa-sitemap" aria-hidden="true"></i> Directory Two</a>
-				<a class="sidebar-list-item" href="#"><i class="fa fa-fw fa-sitemap" aria-hidden="true"></i> Directory Three</a>
-			</div>
-		</div>
-	</aside>
+	{% include "sidebar.html" %}
 
 	<!-- Page Content -->
 	<main id="wrapper">
 		<!-- Header -->
-		<section id="infoheader-wrapper">
-			<span class="infoheader-breadcrumbs">
-				<ul>
-				 <li>Directory One</li>
-				</ul>
-			</span>
-			<span class="infoheader-buttons">
-				<a class="infoheader-button" href="#"><i class="fa fa-fw fa-plus-circle" aria-hidden="true"></i> Upload File</a>
-				<a class="infoheader-button" href="#"><i class="fa fa-fw fa-folder" aria-hidden="true"></i> New Directory</a>
-				<a class="infoheader-button" href="#"><i class="fa fa-lg fa-cogs" aria-hidden="true"></i></a>
-				<a class="infoheader-button infoheader-button-mobile" href="#"><i class="fa fa-fw fa-plus" aria-hidden="true"></i></a>
-			</span>
-		</section>
+		{% include "header.html" %}
 
 		<!-- File List -->
-		<section id="file-list-wrapper">
-			<div class="file-list-header">
-				<div class="file-list-col file-list-col-name" data-sort="0">
-					Name
-					<i class="fa fa-fw fa-sort-amount-asc file-list-sort" aria-hidden="true"></i>
-				</div>
-				<div class="file-list-col file-list-col-size" data-sort="0">
-					Size
-					<i class="fa fa-fw fa-sort-amount-asc file-list-sort" aria-hidden="true"></i>
-				</div>
-				<div class="file-list-col file-list-col-date" data-sort="0">
-					Modification Date
-					<i class="fa fa-fw fa-sort-amount-asc file-list-sort" aria-hidden="true"></i>
-				</div>
-				<div class="file-list-col file-list-col-opt"></div>
-			</div>
-			<div class="file-list-body">
-				<div class="file-list-row">
-					<div class="file-list-col file-list-col-icon file-icon-text">
-						<i class="fa fa-lg fa-file-text-o fa-inverse"></i>
-					</div>
-					<div class="file-list-col file-list-col-name">Example Text Document.txt</div>
-					<div class="file-list-col file-list-col-size">99.99 KB</div>
-					<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
-					<div class="file-list-col file-list-col-opt"><a href="#"><i class="fa fa-fw fa-lg fa-ellipsis-h" aria-hidden="true"></i></a></div>
-				</div>
-				<div class="file-list-row">
-					<div class="file-list-col file-list-col-icon file-icon-image">
-						<i class="fa fa-lg fa-file-image-o fa-inverse"></i>
-					</div>
-					<div class="file-list-col file-list-col-name">Example Image.png</div>
-					<div class="file-list-col file-list-col-size">99.99 KB</div>
-					<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
-					<div class="file-list-col file-list-col-opt"><a href="#"><i class="fa fa-fw fa-lg fa-ellipsis-h" aria-hidden="true"></i></a></div>
-				</div>
-				<div class="file-list-row">
-					<div class="file-list-col file-list-col-icon file-icon-audio">
-						<i class="fa fa-lg fa-file-audio-o fa-inverse"></i>
-					</div>
-					<div class="file-list-col file-list-col-name">Example Audio.mp3</div>
-					<div class="file-list-col file-list-col-size">99.99 KB</div>
-					<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
-					<div class="file-list-col file-list-col-opt"><a href="#"><i class="fa fa-fw fa-lg fa-ellipsis-h" aria-hidden="true"></i></a></div>
-				</div>
-				<div class="file-list-row">
-					<div class="file-list-col file-list-col-icon file-icon-video">
-						<i class="fa fa-lg fa-file-video-o fa-inverse"></i>
-					</div>
-					<div class="file-list-col file-list-col-name">Example Video.mp4</div>
-					<div class="file-list-col file-list-col-size">99.99 KB</div>
-					<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
-					<div class="file-list-col file-list-col-opt"><a href="#"><i class="fa fa-fw fa-lg fa-ellipsis-h" aria-hidden="true"></i></a></div>
-				</div>
-				<div class="file-list-row">
-					<div class="file-list-col file-list-col-icon file-icon-archive">
-						<i class="fa fa-lg fa-file-archive-o fa-inverse"></i>
-					</div>
-					<div class="file-list-col file-list-col-name">Example Archive.zip</div>
-					<div class="file-list-col file-list-col-size">99.99 KB</div>
-					<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
-					<div class="file-list-col file-list-col-opt"><a href="#"><i class="fa fa-fw fa-lg fa-ellipsis-h" aria-hidden="true"></i></a></div>
-				</div>
-				<div class="file-list-row">
-					<div class="file-list-col file-list-col-icon file-icon-code">
-						<i class="fa fa-lg fa-file-code-o fa-inverse"></i>
-					</div>
-					<div class="file-list-col file-list-col-name">Example Script.sh</div>
-					<div class="file-list-col file-list-col-size">99.99 KB</div>
-					<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
-					<div class="file-list-col file-list-col-opt"><a href="#"><i class="fa fa-fw fa-lg fa-ellipsis-h" aria-hidden="true"></i></a></div>
-				</div>
-				<div class="file-list-row">
-					<div class="file-list-col file-list-col-icon file-icon-unknown">
-						<i class="fa fa-lg fa-file-o fa-inverse"></i>
-					</div>
-					<div class="file-list-col file-list-col-name">Example File.dat</div>
-					<div class="file-list-col file-list-col-size">99.99 KB</div>
-					<div class="file-list-col file-list-col-date">Jan 1, 1970 12:00 AM</div>
-					<div class="file-list-col file-list-col-opt"><a href="#"><i class="fa fa-fw fa-lg fa-ellipsis-h" aria-hidden="true"></i></a></div>
-				</div>
-			</div>
-		</section>
+		{% include "filelist.html" %}
 	</main>
 
-	<div id="testModal" class="modal" aria-hidden="true">
-		<div class="modal-content">
-			<div class="modal-header">
-				Test Modal
-			</div>
-			<div class="modal-body">
-				<a class="modal-close" href="#"><i class="fa fa-fw fa-times" aria-hidden="true"></i></a>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas dignissim venenatis. Integer maximus nisi lorem, non lacinia nisl varius quis. Sed ut magna ipsum. Maecenas ut diam velit. Nunc et lacus turpis. Aenean vestibulum, leo in interdum efficitur, mauris orci rhoncus nisl, et lobortis orci felis sed lorem. Morbi eleifend semper purus vitae maximus.
-			</div>
-			<div class="modal-footer">
-				<button>Submit</button>
-			</div>
-		</div>
-	</div>
+	{% include "modals.html" %}
 
 	<!-- Core JS -->
 	<script type="text/javascript" src="/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/main.js"></script>
 
-	<!-- Sidebar Toggle Script -->
-	<script>
-		$("#sidebar-toggle").click(function(e) {
-			e.preventDefault();
-			$("#sidebar-wrapper").toggleClass("toggled");
-			$("#wrapper").toggleClass("toggled");
-		});
-	</script>
-
-	<!-- File List Sorting Functionality -->
-	<script>
-		$("#file-list-wrapper > .file-list-header > .file-list-col-name[data-sort]").click(function() {
-			sortFileList("name");
-		});
-
-		$("#file-list-wrapper > .file-list-header > .file-list-col-size[data-sort]").click(function() {
-			sortFileList("size");
-		});
-
-		$("#file-list-wrapper > .file-list-header > .file-list-col-date[data-sort]").click(function() {
-			sortFileList("date");
-		});
-	</script>
-
-	<!-- Directory Filtering Functionality -->
-	<script>
-		$("#sidebar-wrapper .sidebar-list-search").keyup(function() {
-			filterDirectoryList($("#sidebar-wrapper .sidebar-list-search").val());
-		});
-	</script>
+	{% include "scripts.html" %}
 </body>
 </html>
