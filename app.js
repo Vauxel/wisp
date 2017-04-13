@@ -7,7 +7,7 @@ var app = express();
 console.log("Starting Wisp...");
 
 // Load JSON config
-var config = require("./config/app.json");
+var config = require("./cfg/app.json");
 
 // Set Express variables
 app.set("port", config.port);
@@ -22,11 +22,10 @@ var nunjucks_env = nunjucks.configure(config.viewsfolder, {
 	watch: config.templating.autoreload
 });
 
-// Load controllers
-require("./controllers/home.js").route(app);
-require("./controllers/error.js").route(app); // Load this last
+// Initialize logic
+require("./src/index.js").init(app);
 
 // Startup server
-server = app.listen(app.get("port"), function () {
+server = app.listen(app.get("port"), function() {
 	console.log("Wisp server listening on port " + server.address().port);
 });

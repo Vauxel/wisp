@@ -72,3 +72,16 @@ function sortFileList(field) {
 
 	table_rows.detach().appendTo(table_body);
 }
+
+function filterDirectoryList(filter) {
+	var list = $("#sidebar-wrapper .sidebar-list-scroll");
+	var list_children = list.children("a");
+
+	list_children.each(function(index) {
+		if($(this).text().indexOf(filter) != -1) {
+			$(this).css("display", "block");
+		} else {
+			$(this).css("display", "none");
+		}
+	});
+}

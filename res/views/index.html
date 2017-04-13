@@ -50,7 +50,7 @@
 			</div>
 		</div>
 		<div class="sidebar-list">
-			<input type="text" class="sidebar-list-search" name="search" placeholder="Search..">
+			<input type="text" class="sidebar-list-search" name="directory-search" placeholder="Search..">
 			<div class="sidebar-list-scroll">
 				<a class="sidebar-list-item" href="#"><i class="fa fa-fw fa-sitemap" aria-hidden="true"></i> Directory One</a>
 				<a class="sidebar-list-item" href="#"><i class="fa fa-fw fa-sitemap" aria-hidden="true"></i> Directory Two</a>
@@ -59,7 +59,7 @@
 		</div>
 	</aside>
 
-	<!-- Navigation Bar -->
+	<!-- Page Content -->
 	<main id="wrapper">
 		<!-- Header -->
 		<section id="infoheader-wrapper">
@@ -76,7 +76,7 @@
 			</span>
 		</section>
 
-		<!-- Page Content -->
+		<!-- File List -->
 		<section id="file-list-wrapper">
 			<div class="file-list-header">
 				<div class="file-list-col file-list-col-name" data-sort="0">
@@ -201,6 +201,13 @@
 
 		$("#file-list-wrapper > .file-list-header > .file-list-col-date[data-sort]").click(function() {
 			sortFileList("date");
+		});
+	</script>
+
+	<!-- Directory Filtering Functionality -->
+	<script>
+		$("#sidebar-wrapper .sidebar-list-search").keyup(function() {
+			filterDirectoryList($("#sidebar-wrapper .sidebar-list-search").val());
 		});
 	</script>
 </body>
